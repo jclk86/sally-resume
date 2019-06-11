@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+  <head lang="en">
+    <title>Sally Resume</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="application-root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      const appRoot = document.querySelector("#application-root");
+
+      function App(props) {
+        console.log(props)
+        return  (
+          <div>
+            <header role="banner">
+              <h1>Sally Student Resume</h1>
+            </header>
+            <div className="address">
+              <a href="mailto:sallstudent@gmail.com">SallyStudent@gmail.com</a>
+              <p className="phone-number">555-555-5555</p>
+            </div>
+            <section className="profile" role="region">
+              <img
+                src="https://2l7g9kgsh281akevs49v281d-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/Broad-City-S2-07_Studio_0054-RETOUCHED-1-1-1024x592.jpg"
+                alt="Sally Student Picture" />
+              <h2 className="name">Sally Student</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+                dapibus
+                diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum
+              </p>
+            </section>
+            <section className="education" role="region">
+              <header className="education-title">
+                <h3><u>EDUCATION</u></h3>
+              </header>
+              <header className="uni">
+                <h4>NEW YORK UNIVERSITY</h4>
+              </header>
+              <div className="uni-info">
+                <p><i>BA in Communications | Cummulative GPA: 3.91</i></p>
+                <p><i>September 2011 - May 2015</i></p>
+              </div>
+            </section>
+            <section className="work" role="region">
+              <header className="work-title">
+                <h3><u>WORK EXPERIENCE</u></h3>
+              </header>
+                <header>
+                  <h4>MARKETHOUND</h4>
+                </header>
+                <div className="job-info">
+                  <p><i>Digital Marketing Guru</i></p>
+                  <p><i>December 2016 - Present</i></p>
+                </div>
+                <ul role="listitem">
+                  <li role="listitem">Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin
+                    massa. Cras metus. Sed aliquet risus a tortor.</li>
+                  <li role="listitem">Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin
+                    massa. Cras metus. Sed aliquet risus a tortor.</li>
+                  <li role="listitem">Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin
+                    massa. Cras metus. Sed aliquet risus a tortor.</li>
+                  <li role="listitem">Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin
+                    massa. Cras metus. Sed aliquet risus a tortor.</li>
+                </ul>          
+                <header>
+                  <h4>WEATHERLIGHT FACTION MARKETING</h4>
+                </header>   
+                <div className="job-info">
+                  <p><i>Digital Marketing Assistant</i></p>
+                  <p><i>May 2015 - October 2016</i></p>
+                </div>
+                <ul role="listitem">
+                  <li role="listitem">Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin
+                    massa.
+                    Cras metus. Sed aliquet risus a tortor.</li>
+                  <li role="listitem">Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin
+                    massa.
+                    Cras metus. Sed aliquet risus a tortor.</li>
+                  <li role="listitem">Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin
+                    massa.
+                    Cras metus. Sed aliquet risus a tortor.</li>
+                  <li role="listitem">Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin
+                    massa.
+                    Cras metus. Sed aliquet risus a tortor.</li>
+                </ul> 
+            </section>
+            <section className="skills" role="region">
+              <header className="skills-title">
+                <h3><u>SKILLS</u></h3>
+              </header>
+              <ul className="skills-list" role="listitem">
+                <li role="listitem">SEO</li>
+                <li role="listitem">Copywriting</li>
+                <li role="listitem">Market Research</li>
+                <li role="listitem">Public Speaking</li>
+                <li role="listitem">Email Marketing</li>
+                <li role="listitem">Google Analytics</li>
+              </ul>
+            </section>
+          </div>
+        )
+      }
+      
+      ReactDOM.render(
+        <App className="my-class">
+        </App>, appRoot
+      );
+    
+    </script>
+  </body>
+
+</html>
