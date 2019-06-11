@@ -18,7 +18,7 @@
         return  (
           <div>
             <header role="banner">
-              <h1>Sally Student Resume</h1>
+              {props.children}
             </header>
             <div className="address">
               <a href="mailto:sallstudent@gmail.com">SallyStudent@gmail.com</a>
@@ -108,6 +108,7 @@
       
       ReactDOM.render(
         <App className="my-class">
+          <h1>Sally Student Resume</h1>
         </App>, appRoot
       );
     
